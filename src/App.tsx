@@ -11,7 +11,7 @@ function App() {
       <div id="header-section" className="flex flex-col justify-center  bg-gradient-to-t from-logo-blue to-logo-lightblue pb-5">
         <img 
           className="h-50 object-scale-down"
-          src="../src/assets/pictures/IMG_HEADER.jpg" 
+          src="../../../src/assets/pictures/IMG_HEADER.jpg" 
           alt="YFHC_logo_img" />
         <div className="text-logo-purple font-bold flex flex-row text-center justify-evenly">
           <p className="px-1">Keyri: <span className="whitespace-nowrap">(913)-230-9208</span></p>
@@ -65,14 +65,14 @@ function App() {
 
           <img 
             className="object-cover lg:w-1/2 w-0" 
-            src="../../src/assets/pictures/IMG-20250312-WA0005.jpg" 
+            src="./src/assets/pictures/IMG-20250312-WA0005.jpg" 
             alt="missing" 
           />
 
           <div className=" flex flex-col space-y-1">
             <img 
               className="object-cover lg:h-1/2 h-full" 
-              src="../../src/assets/pictures/IMG-20250312-WA0018.jpg" 
+              src="../src/assets/pictures/IMG-20250312-WA0018.jpg" 
               alt="missing" />
             <img 
               className="object-cover lg:h-1/2 h-0" 
