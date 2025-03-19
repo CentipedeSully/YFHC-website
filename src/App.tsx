@@ -8,15 +8,15 @@ function App() {
   return (
     <div className='fonted'>
 
-      <div id="header-section" className="flex flex-col bg-gradient-to-t from-logo-blue to-logo-lightblue pb-5">
+      <div id="header-section" className="flex flex-col justify-center  bg-gradient-to-t from-logo-blue to-logo-lightblue pb-5">
         <img 
           className="h-50 object-scale-down"
           src="src\assets\pictures\IMG_HEADER.jpg" 
           alt="YFHC_logo_img" />
-        <div className="text-logo-purple font-bold flex flex-row justify-evenly">
-          <p>Keyri: (913)-230-9208</p>
-          <p>Maria: (913)-291-8379</p>
-          <p>Email: <a 
+        <div className="text-logo-purple font-bold flex flex-row text-center justify-evenly">
+          <p className="px-1">Keyri: <span className="whitespace-nowrap">(913)-230-9208</span></p>
+          <p className="px-1">Maria: <span className="whitespace-nowrap">(913)-291-8379</span></p>
+          <p className="px-1">Email: <a 
             href="mailto:thefamilyhouseclean@gmail.com"
             className="hover:text-amber-700 hover:underline"
             >Thefamilyhouseclean@gmail.com</a>
@@ -25,20 +25,23 @@ function App() {
         </div>
       </div>
 
-      <nav id="navbar" className="bg-logo-purple h-10 flex flex-row px-10 justify-center py-1 space-x-1.5 fonted">
-        <span className="px-3 text-gray-200 rounded my-auto py-1 mr-10">- Kansas City Home Cleaning Service -</span>
-        < NavButton
-          scrollTo={"#who-are-we"}
-          text={"About"}
-        />
-        < NavButton
-          scrollTo={"#service-section"}
-          text={"Services"}
-        />
-        < NavButton
-          scrollTo={"#contact-section"}
-          text={"Contact"}
-        />
+      <nav id="navbar" className="bg-logo-purple sm:h-20  md:h-10 flex sm:flex-col md:flex-row px-10 justify-center py-1 space-x-1.5 fonted">
+        <span className="px-3 text-gray-200 rounded my-auto py-1 text-center md:mr-10">-Kansas City Home Cleaning Service -</span>
+        <div className=" flex flex-row justify-center">
+          < NavButton
+            scrollTo={"#who-are-we"}
+            text={"About"}
+          />
+          < NavButton
+            scrollTo={"#service-section"}
+            text={"Services"}
+          />
+          < NavButton
+            scrollTo={"#contact-section"}
+            text={"Contact"}
+          />
+        </div>
+        
 
 
       </nav>
@@ -49,8 +52,8 @@ function App() {
           <div className="absolute w-full h-full text-white text-center">
             <div className="flex flex-col justify-center h-full">
               <div className="mb-5">
-                <p className="text-7xl font-bold drop-shadow-lg">Clean homes are happy homes</p>
-                <p className="text-2xl pt-2 font-bold drop-shadow-lg">Providing service for the Greater Kansas City area</p>
+                <p className="text-3xl lg:text-5xl  xl:text-7xl font-bold drop-shadow-lg">Clean homes are happy homes</p>
+                <p className="text-xl lg:text-2xl pt-2 font-bold drop-shadow-lg">Providing service for the Greater Kansas City area</p>
               </div>
               
               <a 
@@ -61,18 +64,18 @@ function App() {
           </div>
 
           <img 
-            className="object-cover w-1/2" 
+            className="object-cover lg:w-1/2 w-0" 
             src="./src/assets/pictures/IMG-20250312-WA0005.jpg" 
             alt="missing" 
           />
 
-          <div className="flex flex-col space-y-1">
+          <div className=" flex flex-col space-y-1">
             <img 
-              className="object-cover h-1/2" 
+              className="object-cover lg:h-1/2 h-full" 
               src="./src/assets/pictures/IMG-20250312-WA0018.jpg" 
               alt="missing" />
             <img 
-              className="object-cover h-1/2" 
+              className="object-cover lg:h-1/2 h-0" 
               src="./src/assets/pictures/IMG-20250312-WA0002.jpg" 
               alt="missing" />
           </div>
@@ -80,22 +83,22 @@ function App() {
         </div>
         
         
-        <div className="text-black mt-20 ">
-          <div id="who-are-we" className="flex flex-row h-120 py-10">
-            <div className="flex flex-col justify-evenly px-4 w-1/2">
-              <p className="text-6xl font-bold text-center">Who Are We</p>
-              <p className="text-3xl py-5"> We are a licensed and insured, 
+        <div className="text-black lg:mt-20 mt-15 ">
+          <div id="who-are-we" className="flex lg:flex-row flex-col justify-center lg:h-120 lg:py-10 space-y-10 mb-10">
+            <div className="flex flex-col justify-evenly px-4 lg:w-1/2">
+              <p className="lg:text-4xl xl:text-6xl text-3xl font-bold text-center">Who Are We</p>
+              <p className="xl:text-3xl lg:text-2xl text-xl py-5 "> We are a licensed and insured, 
                 family-owned home cleaning business with over 6 years of experience demonstrating accountability, 
                 fostering positivity, and providing quality service to our clients.
               </p>
 
               <a 
-                className="text-white px-4 py-1 mt-5 bg-logo-purple rounded mx-auto hover:bg-rose-950"
+                className="text-white px-4 py-1 lg:mt-5 bg-logo-purple rounded mx-auto hover:bg-rose-950"
                 href="#contact-section">Learn More About Us
               </a>
             </div>
             <img 
-              className="h-full object-contain rounded "
+              className="lg:h-full md:h-120 object-contain rounded md:pb-10"
               src="./src/assets/pictures/IMG-20250315-WA0018.jpg" 
               alt="" />
           </div>
@@ -110,12 +113,12 @@ function App() {
       <div id="service-section" className=" bg-gray-300">
         <div className="mx-20 py-20 text-black ">
           
-          <div className="flex flex-row-reverse justify-center text-black space-x-1 h-100 pb-1">
+          <div className="flex lg:flex-row-reverse flex-col justify-center text-black space-x-1 lg:h-100 pb-1">
 
-            <div className="w-1/2 px-5 flex flex-col justify-center">
-              <p className="w-full font-bold text-6xl text-center">Services</p>
-              <p className="text-3xl pt-5 text-center" >Our offered services include:</p>
-              <ul className="text-3xl pl-8 pb-5 mx-auto">
+            <div className="lg:w-1/2 px-5 flex flex-col justify-center">
+              <p className="w-full font-bold text-4xl xl:text-6xl text-center">Services</p>
+              <p className="xl:text-3xl text-2xl pt-5 text-center" >Our offered services include:</p>
+              <ul className="xl:text-3xl text-2xl  pl-8 pb-5 pt-2 mx-auto">
                 <li>- Routine Cleaning</li>
                 <li>- Deep Cleaning</li>
                 <li>- Office Cleaning</li>
@@ -123,12 +126,12 @@ function App() {
                 <li>- And More!</li>
               </ul>
               <a 
-                className="text-white px-4 py-1  bg-logo-purple rounded mx-auto hover:bg-rose-950"
+                className="text-white px-4 py-1 sm:mb-10 lg:mb-0 bg-logo-purple rounded mx-auto hover:bg-rose-950"
                 href="#contact-section">Ask About More Services
               </a>
             </div>
 
-            <div className="w-1/2 ">
+            <div className="lg:w-1/2 ">
               <div id="first-services-caro" className="carousel h-full">
                 <CarouselItem 
                   itemId="first-services-caro-1"
@@ -155,9 +158,9 @@ function App() {
 
           </div>
 
-          <div className="flex flex-row h-100 space-x-1">
+          <div className="flex lg:flex-row flex-col lg:h-100 space-x-1">
 
-            <div className="w-1/2 h-100">
+            <div className="lg:w-1/2 h-100">
               <div id="sec-services-caro" className="carousel h-full">
                 <CarouselItem 
                   itemId="sec-services-caro-1"
@@ -203,7 +206,7 @@ function App() {
               </div>
             </div>
 
-            <div className="w-1/2">
+            <div className="lg:w-1/2 h-100">
             <div id="third-services-caro" className="carousel h-full">
                 <CarouselItem 
                   itemId="third-services-caro-1"
@@ -242,10 +245,11 @@ function App() {
 
       <div id="contact-section" className=" mx-20 flex flex-col justify-center py-20">
 
-        <div className="flex flex-row">
-          <div className="text-black text-center flex flex-col w-1/2">
-            <p className="text-6xl font-bold">Contact Us Today</p>
-            <p className="text-2xl ">And setup your new professional cleaning service!</p>
+        <div className="flex lg:flex-row flex-col justify-center space-y-10">
+          <div className="text-black text-center flex flex-col justify-center lg:w-1/2">
+            <p className="lg:text-6xl text-4xl font-bold">Contact Us Today</p>
+            <p className="text-2xl md:py-2">And setup your new professional cleaning service!</p>
+            <p className="text-2xl ">~ Hablamos Espanõl ~</p>
             <p className="text-2xl pt-5 pb-10"></p>
             <div className="flex flex-col justify-center space-y-10">
 
@@ -279,15 +283,12 @@ function App() {
               </div>
 
             </div>
-
-            <div className="text-center pt-10 rounded bg-white">
-              <p className="text-2xl">~ Hablamos Espanõl ~</p>
-            </div>
             
           </div>
 
 
-          <div className="text-black w-1/2">
+          <div className="text-black lg:w-1/2">
+            <p className="text-xl text-center">~ More of our work ~</p>
             <div id="contact-caro" className="carousel h-150">
               <CarouselItem
                 itemId="contact-caro-1"
