@@ -6,19 +6,29 @@ function App() {
 
 
   return (
-    <div className=''>
+    <div className='fonted'>
 
       <div id="header-section" className="flex flex-col bg-gradient-to-t from-logo-blue to-logo-lightblue pb-5">
         <img 
           className="h-50 object-scale-down"
           src="src\assets\pictures\IMG_HEADER.jpg" 
           alt="YFHC_logo_img" />
+        <div className="text-logo-purple font-bold flex flex-row justify-evenly">
+          <p>Keyri: (913)-230-9208</p>
+          <p>Maria: (913)-291-8379</p>
+          <p>Email: <a 
+            href="mailto:thefamilyhouseclean@gmail.com"
+            className="hover:text-amber-700 hover:underline"
+            >Thefamilyhouseclean@gmail.com</a>
+          </p>
+          
+        </div>
       </div>
 
       <nav id="navbar" className="bg-logo-purple h-10 flex flex-row px-10 justify-center py-1 space-x-1.5 fonted">
         <span className="px-3 text-gray-200 rounded my-auto py-1 mr-10">- Kansas City Home Cleaning Service -</span>
         < NavButton
-          scrollTo={"#welcome-section"}
+          scrollTo={"#who-are-we"}
           text={"About"}
         />
         < NavButton
@@ -70,17 +80,17 @@ function App() {
         </div>
         
         
-        <div className="text-black mt-10 ">
-          <p className="text-6xl font-bold ml-20">Who Are We</p>
-          <div className="flex flex-row h-120 pb-10">
-            <div className="flex flex-col pt-5 px-4 w-1/2">
-              <p className="text-3xl "> We are a licensed and insured, 
-                family-owned home cleaning business that values fostering positivity,
-                demonstrating accountability, and providing quality service to our clients.
+        <div className="text-black mt-20 ">
+          <div id="who-are-we" className="flex flex-row h-120 py-10">
+            <div className="flex flex-col justify-evenly px-4 w-1/2">
+              <p className="text-6xl font-bold text-center">Who Are We</p>
+              <p className="text-3xl py-5"> We are a licensed and insured, 
+                family-owned home cleaning business with over 6 years of experience demonstrating accountability, 
+                fostering positivity, and providing quality service to our clients.
               </p>
 
               <a 
-                className="text-white px-4 py-1 mt-5 bg-logo-purple rounded ml-35 mr-auto hover:bg-rose-950"
+                className="text-white px-4 py-1 mt-5 bg-logo-purple rounded mx-auto hover:bg-rose-950"
                 href="#contact-section">Learn More About Us
               </a>
             </div>
@@ -98,22 +108,24 @@ function App() {
 
 
       <div id="service-section" className=" bg-gray-300">
-        <div className="mx-20 py-4 text-black ">
-          <div className="flex flex-row-reverse">
-            <p className="w-1/2 font-bold text-6xl text-center pb-5">Our Services</p>
-          </div>
+        <div className="mx-20 py-20 text-black ">
           
-          <div className="flex flex-row-reverse text-black space-x-1 h-80 pb-1">
+          <div className="flex flex-row-reverse justify-center text-black space-x-1 h-100 pb-1">
 
-            <div className="w-1/2 px-5">
-              <p className="text-3xl" >Our offered services include (but aren't limited to):</p>
-              <ul className="text-3xl pl-5">
+            <div className="w-1/2 px-5 flex flex-col justify-center">
+              <p className="w-full font-bold text-6xl text-center">Services</p>
+              <p className="text-3xl pt-5 text-center" >Our offered services include:</p>
+              <ul className="text-3xl pl-8 pb-5 mx-auto">
                 <li>- Routine Cleaning</li>
                 <li>- Deep Cleaning</li>
                 <li>- Office Cleaning</li>
                 <li>- New Construction Cleaning</li>
                 <li>- And More!</li>
               </ul>
+              <a 
+                className="text-white px-4 py-1  bg-logo-purple rounded mx-auto hover:bg-rose-950"
+                href="#contact-section">Ask About More Services
+              </a>
             </div>
 
             <div className="w-1/2 ">
@@ -143,9 +155,9 @@ function App() {
 
           </div>
 
-          <div className="flex flex-row h-80 space-x-1">
+          <div className="flex flex-row h-100 space-x-1">
 
-            <div className="w-1/2 h-80">
+            <div className="w-1/2 h-100">
               <div id="sec-services-caro" className="carousel h-full">
                 <CarouselItem 
                   itemId="sec-services-caro-1"
@@ -228,56 +240,176 @@ function App() {
 
 
 
-      <div id="contact-section" className="h-100 mx-10 flex flex-col justify-center">
+      <div id="contact-section" className=" mx-20 flex flex-col justify-center py-20">
 
-        <div className="mx-auto">
-          <div className="w-100 bg-white text-rose-900 text-center pt-3 pb-5 rounded hover:bg-rose-300">
-            <p className="text-3xl text-center ">Contact Us Today</p>
+        <div className="flex flex-row">
+          <div className="text-black text-center flex flex-col w-1/2">
+            <p className="text-6xl font-bold">Contact Us Today</p>
             <p className="text-2xl ">And setup your new professional cleaning service!</p>
-          </div>
+            <p className="text-2xl pt-5 pb-10"></p>
+            <div className="flex flex-col justify-center space-y-10">
 
-          <div className="flex flex-row justify-center pt-3 min-w-30 max-w-100 space-y-3">
+              <div id="call-area" className="mx-3 rounded ">
+                <p className="text-4xl font-bold ">Call</p>
+                <ul className="rounded-b py-2">
+                  <li>
+                    <p className="flex text-2xl justify-center px-2 space-x-3 whitespace-nowrap">
+                      <span>Keyri:</span><span>(913)-230-9208</span>
+                    </p>
+                  </li>
+                  <li>
+                    <p className="flex text-2xl justify-center px-2  space-x-3 whitespace-nowrap">
+                      <span>Maria:</span><span>(913)-291-8379</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
 
-            <div id="call-area" className="mx-3 rounded ">
-              <p className="text-2xl fonted bg-logo-purple rounded-t text-white min-w-50 text-center py-1">Call</p>
-              <ul className="rounded-b bg-rose-200 py-2 hover:bg-rose-300 border-b-2 border-l-2 border-r-2 border-logo-purple">
-                <li>
-                  <p className="flex justify-evenly text-rose-900 px-2 whitespace-nowrap">
-                    <span>Keyri:</span><span>(913)-230-9208</span>
-                  </p>
-                </li>
-                <li>
-                  <p className="flex justify-evenly text-rose-900 px-2 whitespace-nowrap">
-                    <span>Maria:</span><span>(913)-291-8379</span>
-                  </p>
-                </li>
-              </ul>
-            </div>
-
-            <div id="email-area" className="mx-3 rounded h-25 ">
-              <p className="text-2xl fonted bg-logo-purple rounded-t text-white min-w-50 text-center">Email</p>
-              <div className="rounded-b bg-rose-200 hover:bg-rose-300 h-18 text-center border-b-2 border-l-2 border-r-2 border-logo-purple">
+              <div id="email-area" className="mx-3 rounded">
+                <p className="text-4xl font-bold text-center">Email</p>
+                <div className="rounded-b text-center">
                 
-                <div className="pt-4 ">
-                  <a 
+                  <div className="pt-2 ">
+                    <a 
                       href="mailto:thefamilyhouseclean@gmail.com"
-                      className="hover:text-amber-950 text-rose-900 hover:underline "
+                      className="text-2xl hover:text-logo-purple hover:underline px-3 "
                       >Thefamilyhouseclean@gmail.com</a>
+                  </div>
                 </div>
               </div>
+
             </div>
 
+            <div className="text-center pt-10 rounded bg-white">
+              <p className="text-2xl">~ Hablamos Espanõl ~</p>
+            </div>
+            
           </div>
 
-          <div className="text-rose-900 text-center pt-3 pb-5 rounded bg-white hover:bg-rose-300">
-            <p className="text-2xl">~ Hablamos Espanõl ~</p>
+
+          <div className="text-black w-1/2">
+            <div id="contact-caro" className="carousel h-150">
+              <CarouselItem
+                itemId="contact-caro-1"
+                imgUrl="./src/assets/pictures/IMG-20250312-WA0001.jpg"
+                prevID="contact-caro-11"
+                nextId="contact-caro-2" 
+              />
+
+              <CarouselItem
+                itemId="contact-caro-2"
+                imgUrl="./src/assets/pictures/IMG-20250312-WA0014.jpg"
+                prevID="contact-caro-1"
+                nextId="contact-caro-3" 
+              />
+
+              <CarouselItem
+                itemId="contact-caro-3"
+                imgUrl="./src/assets/pictures/IMG-20250312-WA0015.jpg"
+                prevID="contact-caro-2"
+                nextId="contact-caro-4" 
+              />
+
+              <CarouselItem
+                itemId="contact-caro-4"
+                imgUrl="./src/assets/pictures/IMG-20250312-WA0016.jpg"
+                prevID="contact-caro-3"
+                nextId="contact-caro-5" 
+              />
+
+              <CarouselItem
+                itemId="contact-caro-5"
+                imgUrl="./src/assets/pictures/IMG-20250312-WA0017.jpg"
+                prevID="contact-caro-4"
+                nextId="contact-caro-6" 
+              />
+
+              <CarouselItem
+                itemId="contact-caro-6"
+                imgUrl="./src/assets/pictures/IMG-20250315-WA0001.jpg"
+                prevID="contact-caro-5"
+                nextId="contact-caro-7" 
+              />
+
+              <CarouselItem
+                itemId="contact-caro-7"
+                imgUrl="./src/assets/pictures/IMG-20250315-WA0002.jpg"
+                prevID="contact-caro-6"
+                nextId="contact-caro-8" 
+              />
+
+              <CarouselItem
+                itemId="contact-caro-8"
+                imgUrl="./src/assets/pictures/IMG-20250315-WA0004.jpg"
+                prevID="contact-caro-7"
+                nextId="contact-caro-9" 
+              />
+
+              <CarouselItem
+                itemId="contact-caro-9"
+                imgUrl="./src/assets/pictures/IMG-20250315-WA0006.jpg"
+                prevID="contact-caro-8"
+                nextId="contact-caro-10" 
+              />
+
+              <CarouselItem
+                itemId="contact-caro-10"
+                imgUrl="./src/assets/pictures/IMG-20250315-WA0011.jpg"
+                prevID="contact-caro-9"
+                nextId="contact-caro-11" 
+              />
+
+              <CarouselItem
+                itemId="contact-caro-11"
+                imgUrl="./src/assets/pictures/IMG-20250315-WA0012.jpg"
+                prevID="contact-caro-10"
+                nextId="contact-caro-1" 
+              />
+
+              <CarouselItem
+                itemId="contact-caro-12"
+                imgUrl="./src/assets/pictures/IMG-20250315-WA0014.jpg"
+                prevID="contact-caro-11"
+                nextId="contact-caro-13" 
+              />
+
+              <CarouselItem
+                itemId="contact-caro-13"
+                imgUrl="./src/assets/pictures/IMG-20250315-WA0015.jpg"
+                prevID="contact-caro-12"
+                nextId="contact-caro-14" 
+              />
+
+              <CarouselItem
+                itemId="contact-caro-14"
+                imgUrl="./src/assets/pictures/IMG-20250315-WA0016.jpg"
+                prevID="contact-caro-13"
+                nextId="contact-caro-15" 
+              />
+
+              <CarouselItem
+                itemId="contact-caro-15"
+                imgUrl="./src/assets/pictures/IMG-20250315-WA0017.jpg"
+                prevID="contact-caro-14"
+                nextId="contact-caro-1" 
+              />
+
+              
+            </div>
           </div>
+          
+
+          
         </div>
 
       </div>
       
-      <div id="footer-section" className="bg-logo-purple h-20">
-
+      <div id="footer-section" className="flex flex-col justify-center bg-logo-purple h-20 text-sm text-center ">
+        <p className="">-Site Developed by William Sullivan Smith-</p>
+        <a 
+          className="hover:underline hover:text-yellow-300"
+          href="https://www.linkedin.com/in/william-smith-154a5120a/" 
+          target="_blank">-Visit LinkedIn-</a>
       </div>
     </div>
   )
