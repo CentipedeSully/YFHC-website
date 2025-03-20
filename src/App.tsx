@@ -66,18 +66,18 @@ function App() {
 
           <img 
             className="object-cover lg:w-1/2 w-0" 
-            src="./src/assets/pictures/IMG-20250312-WA0005.jpg" 
+            src="/assets/pictures/IMG-20250312-WA0005.jpg" 
             alt="missing" 
           />
 
           <div className=" flex flex-col space-y-1">
             <img 
               className="object-cover lg:h-1/2 h-full" 
-              src="./src/assets/pictures/IMG-20250312-WA0018.jpg" 
+              src="/assets/pictures/IMG-20250312-WA0018.jpg" 
               alt="missing" />
             <img 
               className="object-cover lg:h-1/2 h-0" 
-              src="./src/assets/pictures/IMG-20250312-WA0002.jpg" 
+              src="/assets/pictures/IMG-20250312-WA0002.jpg" 
               alt="missing" />
           </div>
           
@@ -100,7 +100,7 @@ function App() {
             </div>
             <img 
               className="lg:h-full md:h-120 object-contain rounded md:pb-10"
-              src="./src/assets/pictures/IMG-20250315-WA0018.jpg" 
+              src="/assets/pictures/IMG-20250315-WA0018.jpg" 
               alt="" />
           </div>
           
@@ -136,21 +136,21 @@ function App() {
               <div id="first-services-caro" className="carousel h-full">
                 <CarouselItem 
                   itemId="first-services-caro-1"
-                  imgUrl="../src/assets/pictures/IMG-20250312-WA0000.jpg"
+                  imgUrl="/assets/pictures/IMG-20250312-WA0000.jpg"
                   prevID="first-services-caro-3"
                   nextId="first-services-caro-2"
                 />
 
                 <CarouselItem 
                   itemId="first-services-caro-2"
-                  imgUrl="../src/assets/pictures/IMG-20250312-WA0003.jpg"
+                  imgUrl="/assets/pictures/IMG-20250312-WA0003.jpg"
                   prevID="first-services-caro-1"
                   nextId="first-services-caro-3"
                 />
 
                 <CarouselItem 
                   itemId="first-services-caro-3"
-                  imgUrl="../src/assets/pictures/IMG-20250312-WA0004.jpg"
+                  imgUrl="/assets/pictures/IMG-20250312-WA0004.jpg"
                   prevID="first-services-caro-2"
                   nextId="first-services-caro-1"
                 />
@@ -165,42 +165,42 @@ function App() {
               <div id="sec-services-caro" className="carousel h-full">
                 <CarouselItem 
                   itemId="sec-services-caro-1"
-                  imgUrl="../src/assets/pictures/IMG-20250312-WA0006.jpg"
+                  imgUrl="/assets/pictures/IMG-20250312-WA0006.jpg"
                   prevID="sec-services-caro-"
                   nextId="sec-services-caro-2"
                 />
 
                 <CarouselItem 
                   itemId="sec-services-caro-2"
-                  imgUrl="../src/assets/pictures/IMG-20250312-WA0007.jpg"
+                  imgUrl="/assets/pictures/IMG-20250312-WA0007.jpg"
                   prevID="sec-services-caro-1"
                   nextId="sec-services-caro-3"
                 />
 
                 <CarouselItem 
                   itemId="sec-services-caro-3"
-                  imgUrl="../src/assets/pictures/IMG-20250312-WA0008.jpg"
+                  imgUrl="/assets/pictures/IMG-20250312-WA0008.jpg"
                   prevID="sec-services-caro-2"
                   nextId="sec-services-caro-4"
                 />
 
                 <CarouselItem 
                   itemId="sec-services-caro-4"
-                  imgUrl="../src/assets/pictures/IMG-20250312-WA0010.jpg"
+                  imgUrl="/assets/pictures/IMG-20250312-WA0010.jpg"
                   prevID="sec-services-caro-3"
                   nextId="sec-services-caro-5"
                 />
 
                 <CarouselItem 
                   itemId="sec-services-caro-5"
-                  imgUrl="../src/assets/pictures/IMG-20250315-WA0005.jpg"
+                  imgUrl="/assets/pictures/IMG-20250315-WA0005.jpg"
                   prevID="sec-services-caro-4"
                   nextId="sec-services-caro-6"
                 />
 
                 <CarouselItem 
                   itemId="sec-services-caro-6"
-                  imgUrl="../src/assets/pictures/IMG-20250315-WA0008.jpg"
+                  imgUrl="/assets/pictures/IMG-20250315-WA0008.jpg"
                   prevID="sec-services-caro-5"
                   nextId="sec-services-caro-1"
                 />
@@ -211,21 +211,21 @@ function App() {
             <div id="third-services-caro" className="carousel h-full">
                 <CarouselItem 
                   itemId="third-services-caro-1"
-                  imgUrl="../src/assets/pictures/IMG-20250315-WA0009.jpg"
+                  imgUrl="/assets/pictures/IMG-20250315-WA0009.jpg"
                   prevID="third-services-caro-3"
                   nextId="third-services-caro-2"
                 />
 
                 <CarouselItem 
                   itemId="third-services-caro-2"
-                  imgUrl="../src/assets/pictures/IMG-20250315-WA0013.jpg"
+                  imgUrl="/assets/pictures/IMG-20250315-WA0013.jpg"
                   prevID="third-services-caro-1"
                   nextId="third-services-caro-3"
                 />
 
                 <CarouselItem 
                   itemId="third-services-caro-3"
-                  imgUrl="../src/assets/pictures/IMG-20250312-WA0009.jpg"
+                  imgUrl="/assets/pictures/IMG-20250312-WA0009.jpg"
                   prevID="third-services-caro-2"
                   nextId="third-services-caro-1"
                 />
@@ -293,105 +293,105 @@ function App() {
             <div id="contact-caro" className="carousel h-150">
               <CarouselItem
                 itemId="contact-caro-1"
-                imgUrl="../src/assets/pictures/IMG-20250312-WA0001.jpg"
+                imgUrl="/assets/pictures/IMG-20250312-WA0001.jpg"
                 prevID="contact-caro-11"
                 nextId="contact-caro-2" 
               />
 
               <CarouselItem
                 itemId="contact-caro-2"
-                imgUrl="../src/assets/pictures/IMG-20250312-WA0014.jpg"
+                imgUrl="/assets/pictures/IMG-20250312-WA0014.jpg"
                 prevID="contact-caro-1"
                 nextId="contact-caro-3" 
               />
 
               <CarouselItem
                 itemId="contact-caro-3"
-                imgUrl="../src/assets/pictures/IMG-20250312-WA0015.jpg"
+                imgUrl="/assets/pictures/IMG-20250312-WA0015.jpg"
                 prevID="contact-caro-2"
                 nextId="contact-caro-4" 
               />
 
               <CarouselItem
                 itemId="contact-caro-4"
-                imgUrl="../src/assets/pictures/IMG-20250312-WA0016.jpg"
+                imgUrl="/assets/pictures/IMG-20250312-WA0016.jpg"
                 prevID="contact-caro-3"
                 nextId="contact-caro-5" 
               />
 
               <CarouselItem
                 itemId="contact-caro-5"
-                imgUrl="../src/assets/pictures/IMG-20250312-WA0017.jpg"
+                imgUrl="/assets/pictures/IMG-20250312-WA0017.jpg"
                 prevID="contact-caro-4"
                 nextId="contact-caro-6" 
               />
 
               <CarouselItem
                 itemId="contact-caro-6"
-                imgUrl="../src/assets/pictures/IMG-20250315-WA0001.jpg"
+                imgUrl="/assets/pictures/IMG-20250315-WA0001.jpg"
                 prevID="contact-caro-5"
                 nextId="contact-caro-7" 
               />
 
               <CarouselItem
                 itemId="contact-caro-7"
-                imgUrl="../src/assets/pictures/IMG-20250315-WA0002.jpg"
+                imgUrl="/assets/pictures/IMG-20250315-WA0002.jpg"
                 prevID="contact-caro-6"
                 nextId="contact-caro-8" 
               />
 
               <CarouselItem
                 itemId="contact-caro-8"
-                imgUrl="../src/assets/pictures/IMG-20250315-WA0004.jpg"
+                imgUrl="/assets/pictures/IMG-20250315-WA0004.jpg"
                 prevID="contact-caro-7"
                 nextId="contact-caro-9" 
               />
 
               <CarouselItem
                 itemId="contact-caro-9"
-                imgUrl="../src/assets/pictures/IMG-20250315-WA0006.jpg"
+                imgUrl="/assets/pictures/IMG-20250315-WA0006.jpg"
                 prevID="contact-caro-8"
                 nextId="contact-caro-10" 
               />
 
               <CarouselItem
                 itemId="contact-caro-10"
-                imgUrl="../src/assets/pictures/IMG-20250315-WA0011.jpg"
+                imgUrl="/assets/pictures/IMG-20250315-WA0011.jpg"
                 prevID="contact-caro-9"
                 nextId="contact-caro-11" 
               />
 
               <CarouselItem
                 itemId="contact-caro-11"
-                imgUrl="../src/assets/pictures/IMG-20250315-WA0012.jpg"
+                imgUrl="/assets/pictures/IMG-20250315-WA0012.jpg"
                 prevID="contact-caro-10"
                 nextId="contact-caro-1" 
               />
 
               <CarouselItem
                 itemId="contact-caro-12"
-                imgUrl="../src/assets/pictures/IMG-20250315-WA0014.jpg"
+                imgUrl="/assets/pictures/IMG-20250315-WA0014.jpg"
                 prevID="contact-caro-11"
                 nextId="contact-caro-13" 
               />
 
               <CarouselItem
                 itemId="contact-caro-13"
-                imgUrl="../src/assets/pictures/IMG-20250315-WA0015.jpg"
+                imgUrl="/assets/pictures/IMG-20250315-WA0015.jpg"
                 prevID="contact-caro-12"
                 nextId="contact-caro-14" 
               />
 
               <CarouselItem
                 itemId="contact-caro-14"
-                imgUrl="../src/assets/pictures/IMG-20250315-WA0016.jpg"
+                imgUrl="/assets/pictures/IMG-20250315-WA0016.jpg"
                 prevID="contact-caro-13"
                 nextId="contact-caro-15" 
               />
 
               <CarouselItem
                 itemId="contact-caro-15"
-                imgUrl="../src/assets/pictures/IMG-20250315-WA0017.jpg"
+                imgUrl="/assets/pictures/IMG-20250315-WA0017.jpg"
                 prevID="contact-caro-14"
                 nextId="contact-caro-1" 
               />
