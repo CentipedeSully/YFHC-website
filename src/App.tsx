@@ -1,4 +1,3 @@
-import logo from "./src/assets/pictures/IMG_HEADER.jpg"
 
 
 
@@ -13,7 +12,7 @@ function App() {
       <div id="header-section" className="flex flex-col justify-center  bg-gradient-to-t from-logo-blue to-logo-lightblue pb-5">
         <img 
           className="h-50 object-scale-down"
-          src={logo} 
+          src='/assets/pictures/IMG_HEADER.JPG'
           alt="YFHC_logo_img" />
         <div className="text-logo-purple font-bold flex flex-row text-center justify-evenly">
           <p className="px-1">Keyri: <span className="whitespace-nowrap">(913)-230-9208</span></p>
