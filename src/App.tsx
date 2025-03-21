@@ -15,7 +15,7 @@ function App() {
           src='/assets/pictures/IMG_HEADER.JPG'
           alt="YFHC_logo_img" />
         <div className="text-logo-purple font-bold flex flex-row text-center justify-evenly">
-          <p className="px-1">Keyri: <span className="whitespace-nowrap">(913)-230-9208</span></p>
+          <p className="px-1">Keyri ("Kay-tee"): <span className="whitespace-nowrap">(913)-230-9208</span></p>
           <p className="px-1">Maria: <span className="whitespace-nowrap">(913)-291-8379</span></p>
           <p className="px-1">Email: <a 
             href="mailto:thefamilyhouseclean@gmail.com"
@@ -27,7 +27,7 @@ function App() {
       </div>
 
       <nav id="navbar" className="bg-logo-purple sm:h-20  md:h-10 flex sm:flex-col md:flex-row px-10 justify-center py-1 space-x-1.5 fonted">
-        <span className="px-3 text-gray-200 rounded my-auto py-1 text-center md:mr-10">-Kansas City Home Cleaning Service -</span>
+        <span className="px-3 text-gray-200 rounded my-auto py-1 text-center md:mr-10">-Kansas & Misouri Home Cleaning Service-</span>
         <div className=" flex flex-row justify-center">
           < NavButton
             scrollTo={"#who-are-we"}
@@ -49,30 +49,30 @@ function App() {
 
       <div id="welcome-section" className="mx-20 bg-white">
 
-        <div className="flex flex-row w-full justify-center space-x-1 relative">
+        <div className="flex flex-row w-full lg:h-120 justify-center space-x-1 relative ">
           <div className="absolute w-full h-full text-white text-center">
-            <div className="flex flex-col justify-center h-full">
-              <div className="mb-5">
-                <p className="text-3xl lg:text-5xl  xl:text-7xl font-bold drop-shadow-lg">Clean homes are happy homes</p>
-                <p className="text-xl lg:text-2xl pt-2 font-bold drop-shadow-lg">Providing service for the Greater Kansas City area</p>
+            <div className="flex flex-col justify-center  h-full">
+              <div className="mb-5 mt-5">
+                <p className="text-3xl lg:text-5xl  xl:text-6xl font-bold drop-shadow-xl">Clean homes are happy homes</p>
+                <p className="text-xl lg:text-2xl pt-2 px-10 font-bold drop-shadow-xl">Providing service for Kansas City an Overland Park</p>
               </div>
               
               <a 
                 className="px-4 py-1 bg-logo-purple rounded mx-auto hover:bg-rose-950"
-                href="#contact-section">Schedule A Cleaning Today
+                href="#contact-section">Schedule An Estimate Today
               </a>
             </div>
           </div>
 
           <img 
-            className="object-cover lg:w-1/2 w-0" 
+            className="object-cover lg:w-1/2 w-0 " 
             src="/assets/pictures/IMG-20250312-WA0005.jpg" 
             alt="missing" 
           />
 
-          <div className=" flex flex-col space-y-1">
+          <div className="flex flex-col space-y-1 h-full">
             <img 
-              className="object-cover lg:h-1/2 h-full" 
+              className="object-cover lg:h-1/2 h-0" 
               src="/assets/pictures/IMG-20250312-WA0018.jpg" 
               alt="missing" />
             <img 
@@ -80,6 +80,19 @@ function App() {
               src="/assets/pictures/IMG-20250312-WA0002.jpg" 
               alt="missing" />
           </div>
+
+          <div className="flex flex-row h-150 lg:h-0 lg:w-0 space-x-1 justify-center">
+            <img 
+              className="object-cover w-full" 
+              src="/assets/pictures/IMG-20250315-WA0014.jpg" 
+              alt="missing" />
+
+            <img
+              className="object-cover  w-full" 
+              src="/assets/pictures/IMG-20250315-WA0006.jpg" 
+              alt="missing" />
+          </div>
+          
           
         </div>
         
@@ -89,7 +102,7 @@ function App() {
             <div className="flex flex-col justify-evenly px-4 lg:w-1/2">
               <p className="lg:text-4xl xl:text-6xl text-3xl font-bold text-center">Who Are We</p>
               <p className="xl:text-3xl lg:text-2xl text-xl py-5 "> We are a licensed and insured, 
-                family-owned home cleaning business with over 6 years of experience demonstrating accountability, 
+                family-owned home cleaning business with <span className=" lg:text-3xl text-2xl font-bold text-logo-purple">over 6 years of experience</span> demonstrating accountability, 
                 fostering positivity, and providing quality service to our clients.
               </p>
 
@@ -127,7 +140,7 @@ function App() {
                 <li>- And More!</li>
               </ul>
               <a 
-                className="text-white px-4 py-1 sm:mb-10 lg:mb-0 bg-logo-purple rounded mx-auto hover:bg-rose-950"
+                className="text-white px-4 py-1 mb-10 lg:mb-0 bg-logo-purple rounded mx-auto hover:bg-rose-950"
                 href="#contact-section">Ask About More Services
               </a>
             </div>
@@ -166,7 +179,7 @@ function App() {
                 <CarouselItem 
                   itemId="sec-services-caro-1"
                   imgUrl="/assets/pictures/IMG-20250312-WA0006.jpg"
-                  prevID="sec-services-caro-"
+                  prevID="sec-services-caro-6"
                   nextId="sec-services-caro-2"
                 />
 
@@ -250,7 +263,6 @@ function App() {
           <div className="text-black text-center flex flex-col justify-center lg:w-1/2">
             <p className="lg:text-6xl text-4xl font-bold">Contact Us Today</p>
             <p className="text-2xl md:py-2">And setup your new professional cleaning service!</p>
-            <p className="text-2xl ">~ Hablamos Espanõl ~</p>
             <p className="text-2xl pt-5 pb-10"></p>
             <div className="flex flex-col justify-center space-y-10">
 
@@ -259,7 +271,7 @@ function App() {
                 <ul className="rounded-b py-2">
                   <li>
                     <p className="flex text-2xl justify-center px-2 space-x-3 whitespace-nowrap">
-                      <span>Keyri:</span><span>(913)-230-9208</span>
+                      <span>Keyri ("Kay-tee"):</span><span>(913)-230-9208</span>
                     </p>
                   </li>
                   <li>
@@ -406,10 +418,10 @@ function App() {
 
       </div>
       
-      <div id="footer-section" className="flex flex-col justify-center bg-logo-purple h-20 text-sm text-center ">
+      <div id="footer-section" className="flex flex-col justify-center text-white bg-logo-purple h-20 text-sm text-center ">
         <p className="">-Site Developed by William Sullivan Smith-</p>
         <a 
-          className="hover:underline hover:text-yellow-300"
+          className="hover:underline  hover:text-yellow-300"
           href="https://www.linkedin.com/in/william-smith-154a5120a/" 
           target="_blank">-Visit LinkedIn-</a>
       </div>
@@ -447,13 +459,19 @@ interface caroProps{
   imgUrl:string,
 }
 const CarouselItem = (props:caroProps) =>{
-  
+  const scrollToPrevious = () => {
+    document.getElementById(props.prevID)?.scrollIntoView({block:'nearest', inline: "center"})
+  }
+  const scrollToNext = () =>{
+    document.getElementById(props.nextId)?.scrollIntoView({block:'nearest', inline: "center"})
+  }
+
   return(
     <div id={props.itemId} className={"carousel-item relative w-full h-full"}>
       <img className="rounded mx-auto object-contain" src={props.imgUrl} alt="missed" />
       <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-        <a href={"#" +props.prevID} className="btn btn-circle">❮</a>
-        <a href={"#" +props.nextId} className="btn btn-circle">❯</a>
+        <button onClick={scrollToPrevious} className="btn btn-circle">❮</button>
+        <button onClick={scrollToNext} className="btn btn-circle">❯</button>
       </div>
     </div>
   )
