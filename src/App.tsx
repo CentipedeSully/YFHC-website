@@ -100,7 +100,7 @@ function App() {
         <div className="text-black lg:mt-20 mt-15 ">
           <div id="who-are-we" className="flex lg:flex-row flex-col justify-center lg:h-120 lg:py-10 space-y-10 mb-10">
             <div className="flex flex-col justify-evenly px-4 lg:w-1/2">
-              <p className="lg:text-4xl xl:text-6xl text-3xl font-bold text-center">Who Are We</p>
+              <h1 className="lg:text-4xl xl:text-6xl text-3xl font-bold text-center">Your House Cleaning Service</h1>
               <p className="xl:text-3xl lg:text-2xl text-xl py-5 "> We are a licensed and insured, 
                 family-owned home cleaning business with <span className=" lg:text-3xl text-2xl font-bold text-logo-purple">over 6 years of experience</span> demonstrating accountability, 
                 fostering positivity, and providing quality service to our clients.
@@ -130,7 +130,7 @@ function App() {
           <div className="flex lg:flex-row-reverse flex-col justify-center text-black space-x-1 lg:h-100 pb-1">
 
             <div className="lg:w-1/2 px-5 flex flex-col justify-center">
-              <p className="w-full font-bold text-4xl xl:text-6xl text-center">Services</p>
+              <h1 className="w-full font-bold text-4xl xl:text-6xl text-center">Services</h1>
               <p className="xl:text-3xl text-2xl pt-5 text-center" >Our offered services include:</p>
               <ul className="xl:text-3xl text-2xl  pl-8 pb-5 pt-2 mx-auto">
                 <li>- Routine Cleaning</li>
@@ -261,7 +261,7 @@ function App() {
 
         <div className="flex lg:flex-row flex-col justify-center space-y-10">
           <div className="text-black text-center flex flex-col justify-center lg:w-1/2">
-            <p className="lg:text-6xl text-4xl font-bold">Contact Us Today</p>
+            <h1 className="lg:text-6xl text-4xl font-bold">Contact Us Today</h1>
             <p className="text-2xl md:py-2">And setup your new professional cleaning service!</p>
             <p className="text-2xl pt-5 pb-10"></p>
             <div className="flex flex-col justify-center space-y-10">

@@ -23,7 +23,7 @@ html {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-#root {
+.contents {
     min-width:640px;
     width: auto !important;
     width:640px;
