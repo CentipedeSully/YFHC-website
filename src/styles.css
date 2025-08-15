@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+    --color-logo-blue: #31ffff;
+    --color-logo-lightblue: #aefffe;
+    --color-logo-purple: #b81c7d;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.bg-internal-welcome {
+    background-image: url('./assets/pictures/IMG-20250312-WA0018.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+}
+
+
+.fonted {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contents {
+    min-width:640px;
+    width: auto !important;
+    width:640px;
+}
+
