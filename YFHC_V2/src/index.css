@@ -10,4 +10,39 @@
   --color-pinkBg: #eaaad4;
   --color-salmonBg: #fcb7be;
   --color-lavenderBg: #c9a7c1;
+  --background-img:  url("./src/landing_sm.png");
+
+  --color-pink-1: #D3B3C1;
+  --color-pink-3: #AF8095;
+  --color-pink-5: #925A73;
+  --color-pink-7: #743E57;
+  --color-pink-9: #60233F;
+}
+
+.landing-img {
+  background-image: url("./src/IMG-20250312-WA0002.jpg");
+  object-fit: contain;
+}
+
+.landing-sm {
+  background-image: url("./src/IMG-20250312-WA0001.jpg");
+  background-color: hsla(0,0,0,.90);
+  object-fit: contain;
+}
+
+.landing-md {
+  background-color: white;
+}
+
+.landing-lg {
+
+  background-color: rebeccapurple;
+}
+
+.landing-xl {
+  background-color: brown
+}
+
+.spaced-letters {
+  letter-spacing: 0.05em;
 }
