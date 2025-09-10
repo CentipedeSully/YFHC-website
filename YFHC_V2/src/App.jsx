@@ -43,7 +43,7 @@ export function LandingArea(){
           <img className='object-cover hidden md:block' src='./src/landing_wide_xl.jpg' alt='clean_kitchen'/>
         </div>
         
-        <div className='flex flex-col pt-15 pb-25'>
+        <div className='flex flex-col pt-15 pb-13 lg:pb-25 '>
           <img className='h-10 object-contain mx-auto mb-5' src="./src/yfhc_logo.png" alt="brand_logo_img" />
           <h2 className='text-center text-pink-5'>YourFamilyHouseClean LLC</h2>
         </div>
@@ -61,7 +61,7 @@ export function LandingArea(){
         </div>
       </div>
 
-      <div className='relative hidden lg:flex justify-center '>
+      <div className='relative flex justify-center'>
         <TestamonialsArea />
       </div>
       
@@ -73,7 +73,7 @@ export function LandingArea(){
 
 export function TestamonialsArea(){
   return (
-    <div className='bg-white z-10 shadow-2xl w-100 lg:w-180 h-65 absolute -translate-y-1/2 rounded'>
+    <div className='bg-white z-10 shadow-2xl w-150 lg:w-180 h-65 absolute -translate-y-1/2 rounded'>
       <div className=''>
         <h2 className='text-center pt-10 pb-4 text-pink-9'>Providing professional 5-star service to Kansas City and Overland Park</h2>
         <hr className=' border border-pink-3 sm:w-140 mx-auto mb-8'/>
@@ -105,7 +105,7 @@ export function TestamonialsArea(){
 
 export function ServicesArea(){
   return (
-    <div className=' bg-pink-100 pt-15 w-150 sm:w-full lg:pt-60 text-pink-7'>
+    <div className=' bg-pink-100 w-150 sm:w-full pt-60 text-pink-7'>
       <img className='h-10 object-contain mx-auto mb-5' src="./src/yfhc_logo.png" alt="brand_logo_img" />
       <h2 className='text-xl text-center pb-15'>Our Services</h2>
       <ul className=' text-pink-5 flex flex-col justify-center gap-10 mx-auto w-150'>
@@ -177,7 +177,7 @@ export function ServicesArea(){
       </div>
       
       
-      <div className='relative hidden lg:flex justify-center mt-50'>
+      <div className='relative flex justify-center mt-50'>
         <LicensedAndInsured />
       </div>
     </div>
@@ -188,7 +188,7 @@ export function ServicesArea(){
 
 export function LicensedAndInsured(){
   return(
-    <div className='bg-white z-10 shadow-2xl w-100 lg:w-180 h-65 absolute -translate-y-1/2 rounded'>
+    <div className='bg-white z-10 shadow-2xl w-150 lg:w-180 h-65 absolute -translate-y-1/2 rounded'>
       <div className=''>
         <h2 className='text-center pt-10 pb-4 text-pink-9'>Licensed And Insured Technicians</h2>
         <hr className=' border border-pink-3 sm:w-140 mx-auto mb-8'/>
