@@ -102,71 +102,73 @@ export function TestamonialsArea(){
     </div>
   )
 }
-
+//<img className=' w-150 h-60 opacity-95 object-cover mx-auto shadow border-b-2 border-b-gray-400 ' src="./src/residential.jpeg" alt="living_room_with_vaccuum" />
 export function ServicesArea(){
   return (
     <div className=' bg-pink-100 w-150 sm:w-full pt-60 text-pink-7'>
       <img className='h-10 object-contain mx-auto mb-5' src="./src/yfhc_logo.png" alt="brand_logo_img" />
       <h2 className='text-xl text-center pb-15'>Our Services</h2>
-      <ul className=' text-pink-5 flex flex-col justify-center gap-10 mx-auto w-150'>
-        <li className='relative flex flex-col justify-center gap-4 w-full'>
-          <h3 className='text-start px-15'>Residential Cleaning</h3>
-          <hr className='w-150 mx-auto '/>
-          <img className=' w-150 h-60 opacity-95 object-cover mx-auto shadow border-b-2 border-b-gray-400 ' src="./src/residential.jpeg" alt="living_room_with_vaccuum" />
-          <div className='w-150 h-60 bg-pink-7 opacity-60 absolute top-15'>
-            
+      <ul className=' text-pink-5 flex flex-col justify-center gap-10 mx-auto w-150 sm:w-full'>
+
+        <li className=' flex flex-col justify-center gap-4 w-full'>
+          <h3 className='text-center'>Residential Cleaning</h3>
+          <hr className='w-100 md:w-1/2 mx-auto '/>
+          <div className='w-150 md:w-250 flex flex-col md:flex-row justify-center mx-auto'>
+            <img className='w-150 md:w-125 h-60 object-cover rounded-t md:rounded-t-none md:rounded-l mx-auto ' src="./src/livingRoom.jpg" alt="" />
+            <p className='px-5 py-2 w-150 h-60 bg-pink-7 text-white rounded-b md:rounded-b-none md:rounded-r mx-auto '>We provide both deep cleaning and maintanance cleaning services to personal and communal living spaces. These spaces include homes, apartments, shelters, community centers, churches,
+              and more.
+              <br />
+              <br />
+              Our deep and maintainence cleanings target all of the traditional home's surfaces, rooms, and appliances.
+              Simply let us know what you'd like us to target and we'll handle the rest.
+            </p>
+              
           </div>
-          <p className='absolute px-5 py-2 w-150 h-60 top-15 text-white'>We provide both deep cleaning and maintanance cleaning services to personal and communal living spaces. These spaces include homes, apartments, shelters, community centers, churches,
-            and more.
-            <br />
-            <br />
-            Our deep and maintainence cleanings target all of the expected surfaces, rooms, and appliances, including bathrooms, living rooms, basements, bedrooms, and kitchens.
-            Simply let us know what you'd like us to target and we'll handle the rest.
-          </p>
         </li>
 
-        <li className='relative flex flex-col justify-center gap-4 w-full'>
-          <h3 className='text-start px-15'>Post-Renovation Cleaning</h3>
-          <hr className='w-150 mx-auto '/>
-          <img className=' w-150 h-60 opacity-95 object-cover mx-auto shadow border-b-2 border-b-gray-400' src="./src/renovation.jpeg" alt="vaccuum_in_room_during_renovations" />
-          <div className='w-150 h-60 bg-pink-7 opacity-75 absolute top-15'>
-            
-          </div>
-          <p className='absolute px-5 py-2 w-150 h-60 top-15 text-white'>We're also qualified to cleanup after large renovations projects, which entail a full top-to-bottom deep cleaning to ensure 
+        <li className=' flex flex-col justify-center gap-4 w-full'>
+          <h3 className='text-center'>Post-Renovation Cleaning</h3>
+          <hr className='w-100 md:w-1/2 mx-auto '/>
+          <div className='w-150 md:w-250 flex flex-col md:flex-row justify-center mx-auto'>
+            <img className='w-150 md:w-125 h-60 object-cover  rounded-t md:rounded-t-none md:rounded-l mx-auto' src="./src/kitchen.jpg" alt="" />
+            <p className='px-5 py-2 w-150 h-60 bg-pink-7 text-white rounded-b md:rounded-b-none md:rounded-r mx-auto '>We're also qualified to cleanup after large renovations projects, which entail a full top-to-bottom deep cleaning to ensure 
             all dust, heavy particles, and construction debris is removed from the area.
             <br />
             <br />
-            If there are any additional specifics that you'd like us to include, let us and our technicians know so we're better able to meet your needs. 
-          </p>
+            If there are any additional specifics that you'd like us to include, let us and our technicians know so we're better able to meet your needs.
+            </p>
+              
+          </div>
         </li>
 
-        <li className='relative flex flex-col justify-center gap-4 w-full'>
-          <h3 className='text-start px-15'>Workplace Cleaning</h3>
-          <hr className='w-150 mx-auto '/>
-          <img className=' w-150 h-60 opacity-95 object-cover mx-auto shadow border-b-2 border-b-gray-400 ' src="./src/office.jpeg" alt="office_room" />
-          <div className='w-150 h-60 bg-pink-7 opacity-75 absolute top-15'>
-            
+        <li className=' flex flex-col justify-center gap-4 w-full'>
+          <h3 className='text-center'>Workplace Cleaning</h3>
+          <hr className='w-100 md:w-1/2 mx-auto '/>
+          <div className='w-150 md:w-250 flex flex-col md:flex-row justify-center mx-auto'>
+            <img className='w-150 md:w-125 h-60 object-cover rounded-t md:rounded-t-none md:rounded-l mx-auto' src="./src/office.jpeg" alt="" />
+            <p className='px-5 py-2 w-150 h-60 bg-pink-7 text-white rounded-b md:rounded-b-none md:rounded-r mx-auto '>Our deep cleaning and maintainence cleaning services also extend to commerical and business surfaces and workspaces.
+            <br />
+            <br />
+            Be sure to communicate the specifics of what to touch and what <span className='italic'>not</span> to touch
+             before the cleaning commenses to help prevent unintended loss of work.
+            </p>
+              
           </div>
-          <p className='absolute px-5 py-2 w-150 h-60 top-15 text-white'>Our deep cleaning and maintainence cleaning services also extend to commerical and business surfaces and workspaces.
-            <br />
-            <br />
-            Be sure to communicate the specifics of what to touch and what <span className='italic'>not</span> to touch before the cleaning commenses to help prevent unintended loss of work.
-          </p>
         </li>
 
-        <li className='relative flex flex-col justify-center gap-4 w-full'>
-          <h3 className='text-start px-15'>Move Out Cleaning</h3>
-          <hr className='w-150 mx-auto '/>
-          <img className=' w-150 h-60 opacity-95 object-cover mx-auto shadow border-b-2 border-b-gray-400 ' src="./src/boxes.jpeg" alt="move_out_boxes_in_home" />
-          <div className='w-150 h-60 bg-pink-7 opacity-75 absolute top-15'>
-            
-          </div>
-          <p className='absolute px-5 py-2 w-150 h-60 top-15 text-white'>Whether you're a renter or landlord, we can also handle the cleanup after a big move. We'll provide our deep cleaning 
+        <li className=' flex flex-col justify-center gap-4 w-full'>
+          <h3 className='text-center'>Move Out Cleaning</h3>
+          <hr className='w-100 md:w-1/2 mx-auto '/>
+          <div className='w-150 md:w-250 flex flex-col md:flex-row justify-center mx-auto'>
+            <img className='w-150 md:w-125 h-60 object-cover rounded-t md:rounded-t-none md:rounded-l mx-auto' src="./src/cleared.jpg" alt="" />
+            <p className='px-5 py-2 w-150 h-60 bg-pink-7 text-white rounded-b md:rounded-b-none md:rounded-r mx-auto'>Whether you're a renter or landlord, we can also handle the cleanup after a big move. We'll provide our deep cleaning 
             services where it's necessary, and also help haul away any garbage, abandoned furniture and appliances to help save you time and energy.   
             <br />
             <br />
             Once the cleanup is completed, the living space will be clear, clean, and open for reuse.
-          </p>
+            </p>
+              
+          </div>
         </li>
         
       </ul>
@@ -208,7 +210,7 @@ export function LicensedAndInsured(){
 
 export function HowItWorks(){
   return (
-    <div className=' bg-white pt-55 pb-70 w-150 sm:w-full text-pink-7 text-center '>
+    <div className=' bg-white pt-55 pb-70 w-150 sm:w-full text-pink-7 text-center relative'>
       <img className='h-10 object-contain mx-auto mb-5' src="./src/yfhc_logo.png" alt="brand_logo_img" />
       <h3 className='text-xl pb-15'>How to setup a service</h3>
       <ul className='flex flex-col gap-5 w-150 mx-auto'>
