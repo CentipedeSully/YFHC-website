@@ -115,7 +115,7 @@ export function ServicesArea(){
           <hr className='w-100 md:w-1/2 mx-auto '/>
           <div className='w-150 md:w-250 flex flex-col md:flex-row justify-center mx-auto'>
             <img className='w-150 md:w-125 h-60 object-cover rounded-t md:rounded-t-none md:rounded-l mx-auto ' src="./livingRoom.jpg" alt="dusted living room" />
-            <p className='px-5 py-2 w-150 h-60 bg-pink-7 text-white rounded-b md:rounded-b-none md:rounded-r mx-auto '>We provide both deep cleaning and maintanance cleaning services to personal and communal living spaces. These spaces include homes, apartments, shelters, community centers, churches,
+            <p className='px-5 py-2 w-150 h-60 bg-pink-5 text-pink-50 rounded-b md:rounded-b-none md:rounded-r mx-auto '>We provide both deep cleaning and maintanance cleaning services to personal and communal living spaces. These spaces include homes, apartments, shelters, community centers, churches,
               and more.
               <br />
               <br />
@@ -131,7 +131,7 @@ export function ServicesArea(){
           <hr className='w-100 md:w-1/2 mx-auto '/>
           <div className='w-150 md:w-250 flex flex-col md:flex-row justify-center mx-auto'>
             <img className='w-150 md:w-125 h-60 object-cover  rounded-t md:rounded-t-none md:rounded-l mx-auto' src="./kitchen.JPG" alt="polished kitchen" />
-            <p className='px-5 py-2 w-150 h-60 bg-pink-7 text-white rounded-b md:rounded-b-none md:rounded-r mx-auto '>We're also qualified to cleanup after large renovations projects, which entail a full top-to-bottom deep cleaning to ensure 
+            <p className='px-5 py-2 w-150 h-60 bg-pink-5 text-pink-50 rounded-b md:rounded-b-none md:rounded-r mx-auto '>We're also qualified to cleanup after large renovations projects, which entail a full top-to-bottom deep cleaning to ensure 
             all dust, heavy particles, and construction debris is removed from the area.
             <br />
             <br />
@@ -146,7 +146,7 @@ export function ServicesArea(){
           <hr className='w-100 md:w-1/2 mx-auto '/>
           <div className='w-150 md:w-250 flex flex-col md:flex-row justify-center mx-auto'>
             <img className='w-150 md:w-125 h-60 object-cover rounded-t md:rounded-t-none md:rounded-l mx-auto' src="./office.jpeg" alt="clean office space" />
-            <p className='px-5 py-2 w-150 h-60 bg-pink-7 text-white rounded-b md:rounded-b-none md:rounded-r mx-auto '>Our deep cleaning and maintainence cleaning services also extend to commerical and business surfaces and workspaces.
+            <p className='px-5 py-2 w-150 h-60 bg-pink-5 text-pink-50 rounded-b md:rounded-b-none md:rounded-r mx-auto '>Our deep cleaning and maintainence cleaning services also extend to commerical and business surfaces and workspaces.
             <br />
             <br />
             Be sure to communicate the specifics of what to touch and what <span className='italic'>not</span> to touch
@@ -161,7 +161,7 @@ export function ServicesArea(){
           <hr className='w-100 md:w-1/2 mx-auto '/>
           <div className='w-150 md:w-250 flex flex-col md:flex-row justify-center mx-auto'>
             <img className='w-150 md:w-125 h-60 object-cover rounded-t md:rounded-t-none md:rounded-l mx-auto' src="./cleared.jpg" alt="cleared room" />
-            <p className='px-5 py-2 w-150 h-60 bg-pink-7 text-white rounded-b md:rounded-b-none md:rounded-r mx-auto'>Whether you're a renter or landlord, we can also handle the cleanup after a big move. We'll provide our deep cleaning 
+            <p className='px-5 py-2 w-150 h-60 bg-pink-5 text-pink-50 rounded-b md:rounded-b-none md:rounded-r mx-auto'>Whether you're a renter or landlord, we can also handle the cleanup after a big move. We'll provide our deep cleaning 
             services where it's necessary, and also help haul away any garbage, abandoned furniture and appliances to help save you time and energy.   
             <br />
             <br />
