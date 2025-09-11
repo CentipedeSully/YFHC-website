@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <div className='text-lg bg-pink-1 w-150  sm:w-full mx-auto'>
+      <div className='text-lg bg-pink-1 mx-auto'>
         <Header />
         <LandingArea />
         <ServicesArea />
@@ -36,24 +36,25 @@ export function Header(){
 
 export function LandingArea(){
   return (
-    <div className=' w-150 sm:w-full'>
+    <div className=''>
       <div className=' bg-pink-1 h-140 lg:h-160 opacity-90 w-full relative overflow-hidden'>
-        <div className='absolute -z-10  w-150 sm:w-full h-full flex justify-center'>
-          <img className='object-cover w-150 sm:w-full absolute -top-42 sm:-top-90 md:hidden' src="./landing_mobile.jpg" alt="pillow_stack" />
+        <div className='absolute -z-10  w-full h-full flex justify-center'>
+          <img className='object-cover absolute opacity-50 -top-42 sm:-top-90 md:hidden' src="./flowers.jpg" alt="pillow_stack" />
           <img className='object-cover hidden md:block' src='./landing_wide_xl.jpg' alt='clean_kitchen'/>
         </div>
         
         <div className='flex flex-col pt-15 pb-13 lg:pb-25 '>
-          <img className='h-10 object-contain mx-auto mb-5' src="./yfhc_logo.png" alt="brand_logo_img" />
-          <h2 className='text-center text-pink-5'>YourFamilyHouseClean LLC</h2>
+          <img className='h-10 object-contain mx-auto mb-5 md:hidden' src="./yfhc_logo_white.png" alt="light_brand_logo_img" />
+          <img className='h-10 object-contain mx-auto mb-5 hidden md:block' src="./yfhc_logo.png" alt="dark_brand_logo_img" />
+          <h2 className='text-center text-white md:text-pink-5'>YourFamilyHouseClean LLC</h2>
         </div>
         
         <div className='pb-130 flex flex-col justify-center'>
           
-          <p className='text-center text-3xl text-pink-9 mb-6 w-90 mx-auto  '>Save time & money</p>
-          <h2 className='text-center text-pink-7 mb-8 mx-auto'>Setup your family friendly cleaning services today</h2>
+          <p className='text-center text-3xl text-white md:text-pink-9 mb-6 w-90 mx-auto  '>Save time & money</p>
+          <h2 className='text-center text-white md:text-pink-7 mb-8 mx-auto'>Setup your family friendly cleaning services today</h2>
 
-          <div className=' flex flex-row gap-5 justify-center bg-pink-9 mx-auto px-5 py-3 text-pink-50 rounded '>
+          <div className=' flex flex-row gap-5 justify-center bg-pink-7 md:bg-pink-9 mx-auto px-5 py-3 text-pink-50 rounded '>
             <span className=''>Request your estimate :</span>
             <span className=''>(913)-230-9208</span>
           </div>
@@ -73,10 +74,10 @@ export function LandingArea(){
 
 export function TestamonialsArea(){
   return (
-    <div className='bg-white z-10 shadow-2xl w-150 lg:w-180 h-65 absolute -translate-y-1/2 rounded'>
+    <div className='bg-white z-10 shadow-2xl w-110  sm:w-140 px-5 lg:w-180 h-65 absolute -translate-y-1/2 rounded'>
       <div className=''>
         <h2 className='text-center pt-10 pb-4 text-pink-9'>Providing professional 5-star service to Kansas City and Overland Park</h2>
-        <hr className=' border border-pink-3 sm:w-140 mx-auto mb-8'/>
+        <hr className=' border border-pink-3 w-85 lg:w-140 mx-auto mb-8'/>
         <ul className='flex flex-row gap-5 justify-center'>
 
           <li>
@@ -105,17 +106,17 @@ export function TestamonialsArea(){
 //<img className=' w-150 h-60 opacity-95 object-cover mx-auto shadow border-b-2 border-b-gray-400 ' src="./src/residential.jpeg" alt="living_room_with_vaccuum" />
 export function ServicesArea(){
   return (
-    <div className=' bg-pink-100 w-150 sm:w-full pt-60 text-pink-7'>
+    <div className=' bg-pink-100 w-full pt-60 text-pink-7'>
       <img className='h-10 object-contain mx-auto mb-5' src="./yfhc_logo.png" alt="brand_logo_img" />
       <h2 className='text-xl text-center pb-15'>Our Services</h2>
-      <ul className=' text-pink-5 flex flex-col justify-center gap-10 mx-auto w-150 sm:w-full'>
+      <ul className=' text-pink-5 flex flex-col justify-center gap-10 mx-auto sm:w-full'>
 
         <li className=' flex flex-col justify-center gap-4 w-full'>
           <h3 className='text-center'>Residential Cleaning</h3>
-          <hr className='w-100 md:w-1/2 mx-auto '/>
-          <div className='w-150 md:w-250 flex flex-col md:flex-row justify-center mx-auto'>
-            <img className='w-150 md:w-125 h-60 object-cover rounded-t md:rounded-t-none md:rounded-l mx-auto ' src="./livingRoom.jpg" alt="dusted living room" />
-            <p className='px-5 py-2 w-150 h-60 bg-pink-5 text-pink-50 rounded-b md:rounded-b-none md:rounded-r mx-auto '>We provide both deep cleaning and maintanance cleaning services to personal and communal living spaces. These spaces include homes, apartments, shelters, community centers, churches,
+          <hr className='w-100 sm:w-130 lg:w-200 mx-auto '/>
+          <div className='w-110 sm:w-140 lg:w-250 flex flex-col lg:flex-row justify-center mx-auto'>
+            <img className='w-110 sm:w-140 lg:w-125 h-70 object-cover rounded-t lg:rounded-t-none lg:rounded-l mx-auto ' src="./livingRoom.jpg" alt="dusted living room" />
+            <p className=' flex items-center px-5 w-110 h-70 sm:w-140 lg:w-125 bg-pink-5 text-pink-50 rounded-b lg:rounded-b-none lg:rounded-r mx-auto '>We provide both deep cleaning and maintanance cleaning services to personal and communal living spaces. These spaces include homes, apartments, shelters, community centers, churches,
               and more.
               <br />
               <br />
@@ -128,10 +129,10 @@ export function ServicesArea(){
 
         <li className=' flex flex-col justify-center gap-4 w-full'>
           <h3 className='text-center'>Post-Renovation Cleaning</h3>
-          <hr className='w-100 md:w-1/2 mx-auto '/>
-          <div className='w-150 md:w-250 flex flex-col md:flex-row justify-center mx-auto'>
-            <img className='w-150 md:w-125 h-60 object-cover  rounded-t md:rounded-t-none md:rounded-l mx-auto' src="./kitchen.JPG" alt="polished kitchen" />
-            <p className='px-5 py-2 w-150 h-60 bg-pink-5 text-pink-50 rounded-b md:rounded-b-none md:rounded-r mx-auto '>We're also qualified to cleanup after large renovations projects, which entail a full top-to-bottom deep cleaning to ensure 
+          <hr className='w-100 sm:w-130 lg:w-200 mx-auto '/>
+          <div className='w-110 sm:w-140 lg:w-250 flex flex-col lg:flex-row justify-center mx-auto'>
+            <img className='w-110 sm:w-140 lg:w-125 h-70 object-cover  rounded-t lg:rounded-t-none lg:rounded-l mx-auto' src="./kitchen.JPG" alt="polished kitchen" />
+            <p className='  flex items-center px-5 w-110 h-70 sm:w-140 lg:w-125 bg-pink-5 text-pink-50 rounded-b lg:rounded-b-none lg:rounded-r mx-auto '>We're also qualified to cleanup after large renovations projects, which entail a full top-to-bottom deep cleaning to ensure 
             all dust, heavy particles, and construction debris is removed from the area.
             <br />
             <br />
@@ -143,13 +144,13 @@ export function ServicesArea(){
 
         <li className=' flex flex-col justify-center gap-4 w-full'>
           <h3 className='text-center'>Workplace Cleaning</h3>
-          <hr className='w-100 md:w-1/2 mx-auto '/>
-          <div className='w-150 md:w-250 flex flex-col md:flex-row justify-center mx-auto'>
-            <img className='w-150 md:w-125 h-60 object-cover rounded-t md:rounded-t-none md:rounded-l mx-auto' src="./office.jpeg" alt="clean office space" />
-            <p className='px-5 py-2 w-150 h-60 bg-pink-5 text-pink-50 rounded-b md:rounded-b-none md:rounded-r mx-auto '>Our deep cleaning and maintainence cleaning services also extend to commerical and business surfaces and workspaces.
+          <hr className='w-100 sm:w-130 lg:w-200 mx-auto '/>
+          <div className='w-110 sm:w-140 lg:w-250 flex flex-col lg:flex-row justify-center mx-auto'>
+            <img className='w-110 sm:w-140 lg:w-125 h-70 object-cover rounded-t lg:rounded-t-none lg:rounded-l mx-auto' src="./office.jpeg" alt="clean office space" />
+            <p className=' flex items-center px-5 w-110 h-70 sm:w-140 lg:w-125 bg-pink-5 text-pink-50 rounded-b lg:rounded-b-none lg:rounded-r mx-auto '>Our deep cleaning and maintainence cleaning services also extend to commerical and business surfaces and workspaces.
             <br />
             <br />
-            Be sure to communicate the specifics of what to touch and what <span className='italic'>not</span> to touch
+            Be sure to communicate the specifics of what to touch and what not to touch
              before the cleaning commenses to help prevent unintended loss of work.
             </p>
               
@@ -158,10 +159,10 @@ export function ServicesArea(){
 
         <li className=' flex flex-col justify-center gap-4 w-full'>
           <h3 className='text-center'>Move Out Cleaning</h3>
-          <hr className='w-100 md:w-1/2 mx-auto '/>
-          <div className='w-150 md:w-250 flex flex-col md:flex-row justify-center mx-auto'>
-            <img className='w-150 md:w-125 h-60 object-cover rounded-t md:rounded-t-none md:rounded-l mx-auto' src="./cleared.jpg" alt="cleared room" />
-            <p className='px-5 py-2 w-150 h-60 bg-pink-5 text-pink-50 rounded-b md:rounded-b-none md:rounded-r mx-auto'>Whether you're a renter or landlord, we can also handle the cleanup after a big move. We'll provide our deep cleaning 
+          <hr className='w-100 sm:w-130 lg:w-200 mx-auto '/>
+          <div className='w-110 sm:w-140 lg:w-250 flex flex-col lg:flex-row justify-center mx-auto'>
+            <img className='w-110 sm:w-140 lg:w-125 h-70 object-cover rounded-t lg:rounded-t-none lg:rounded-l mx-auto' src="./cleared.jpg" alt="cleared room" />
+            <p className=' flex items-center px-5 w-110 h-70 sm:w-140 lg:w-125 bg-pink-5 text-pink-50 rounded-b lg:rounded-b-none lg:rounded-r mx-auto'>Whether you're a renter or landlord, we can also handle the cleanup after a big move. We'll provide our deep cleaning 
             services where it's necessary, and also help haul away any garbage, abandoned furniture and appliances to help save you time and energy.   
             <br />
             <br />
@@ -190,11 +191,11 @@ export function ServicesArea(){
 
 export function LicensedAndInsured(){
   return(
-    <div className='bg-white z-10 shadow-2xl w-150 lg:w-180 h-65 absolute -translate-y-1/2 rounded'>
+    <div className='bg-white z-10 shadow-2xl w-110 sm:w-140 px-5 lg:w-180 h-65 absolute -translate-y-1/2 rounded'>
       <div className=''>
         <h2 className='text-center pt-10 pb-4 text-pink-9'>Licensed And Insured Technicians</h2>
-        <hr className=' border border-pink-3 sm:w-140 mx-auto mb-8'/>
-        <ul className='flex flex-row gap-20 justify-center'>
+        <hr className=' border border-pink-3 w-85 lg:w-140 mx-auto mb-8'/>
+        <ul className='flex flex-row gap-8 lg:gap-20 justify-center'>
           <li>
             <img className='object-cover w-18' src="./award.jpg" alt="award_ribbon" />
           </li>
@@ -210,12 +211,12 @@ export function LicensedAndInsured(){
 
 export function HowItWorks(){
   return (
-    <div className=' bg-white pt-55 pb-70 w-150 sm:w-full text-pink-7 text-center relative'>
+    <div className=' bg-white pt-55 pb-70 w-full text-pink-7 text-center relative'>
       <img className='h-10 object-contain mx-auto mb-5' src="./yfhc_logo.png" alt="brand_logo_img" />
       <h3 className='text-xl pb-15'>How to setup a service</h3>
-      <ul className='flex flex-col gap-5 w-150 mx-auto'>
+      <ul className='flex flex-col w-full sm:w-140 lg:w-170 gap-5 mx-auto'>
         <li className='px-20 mx-auto py-10 '>
-          <h4 className=' flex flex-row pl-15'><span className='pr-10'>Step 1:</span> <span>Receive an Estimate</span></h4>
+          <h4 className=' flex flex-row justify-center sm:justify-start  sm:pl-15'><span className='pr-10'>Step 1:</span> <span>Receive an Estimate</span></h4>
           <hr className='mt-2 border'/>
           <p className='  text-left pt-5'>
             Call us to setup an appointment to show us the space that needs servicing. Whether it be a one time clean after a move out or renovation, 
@@ -224,7 +225,7 @@ export function HowItWorks(){
           </p>
         </li>
         <li className='px-20 mx-auto py-10 '>
-          <h4 className=' flex flex-row  pl-15'><span className='pr-10'>Step 2:</span> <span>Schedule a Cleaning</span></h4>
+          <h4 className=' flex flex-row justify-center sm:justify-start  sm:pl-15'><span className='pr-10'>Step 2:</span> <span>Schedule a Cleaning</span></h4>
           <hr className='mt-2 border '/>
           <p className='  text-left pt-5'>
             After the estimate is approved, we'll schedule a time for our licensed technicians to handle the cleaning. If a service needs to be cancelled, then let us know.
@@ -234,7 +235,7 @@ export function HowItWorks(){
           </p>
         </li>
         <li className='px-20 mx-auto py-10'>
-          <h4 className=' flex flex-row text-xl pl-15'><span className='pr-10'>Step 3:</span> <span>Process the Payment</span></h4>
+          <h4 className=' flex flex-row justify-center sm:justify-start sm:pl-15'><span className='pr-10'>Step 3:</span> <span>Process the Payment</span></h4>
           <hr className='mt-2 border'/>
           <p className='  text-left pt-5 '>
             Payment is collected upon service completion. We accept cash and checks only. Checks must be written to <span className='italic' >"YourFamilyHouseClean LLC"</span>.
@@ -250,7 +251,7 @@ export function HowItWorks(){
 export function Footer(){
 
   return(
-    <div className='bg-pink-7 text-sm text-white text-center py-5 w-150 sm:w-full'>
+    <div className='bg-pink-7 text-sm text-white text-center py-5'>
       <div>YourFamliyHouseCleanLLC</div>
       <div className='' >Site developed by Willian Sullivan-Smith</div>
     </div>
