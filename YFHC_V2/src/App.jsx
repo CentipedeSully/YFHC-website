@@ -10,6 +10,7 @@ function App() {
         <LandingArea />
         <ServicesArea />
         <HowItWorks />
+        <FAQs/>
         <Footer />
       </div>
     </>
@@ -211,7 +212,7 @@ export function LicensedAndInsured(){
 
 export function HowItWorks(){
   return (
-    <div className=' bg-white pt-55 pb-70 w-full text-pink-7 text-center relative'>
+    <div className=' bg-white pt-55 pb-35 w-full text-pink-7 text-center relative'>
       <img className='h-10 object-contain mx-auto mb-5' src="./yfhc_logo.png" alt="brand_logo_img" />
       <h3 className='text-xl pb-15'>How to setup a service</h3>
       <ul className='flex flex-col w-full sm:w-140 lg:w-170 gap-5 mx-auto'>
@@ -244,6 +245,71 @@ export function HowItWorks(){
           </p>
         </li>
       </ul>
+    </div>
+  )
+}
+
+export function FAQs(){
+
+  return (
+    <div className='bg-pink-1 py-20 text-pink-7'>
+      <img className='h-10 object-contain mx-auto mb-5' src="./yfhc_logo.png" alt="brand_logo_img" />
+      <h2 className='text-xl text-center pb-15'>Frequently Asked Questions</h2>
+      <ul className='flex flex-col gap-10'>
+        <li>
+          <QA 
+            question="What's your service area?"
+            answer="Any location that's within Kansas City (KS and MO) and Overland Park. Call us if you're unsure of whether or not your location falls within our range."
+            answer2=""
+          />
+        </li>
+        <li>
+          <QA 
+            question="How much do estimates cost?"
+            answer="All estimates are free of charge."
+            answer2=""
+          />
+        </li>
+        <li>
+          <QA 
+            question="What if I need to cancel a service?"
+            answer="We don't make our clients sign any contracts. Just call ahead to let us know. 
+            If you're cancelling 72 hours before the service date, then you'll be charged a $50 cancellation fee."
+            answer2=""
+          />
+        </li>
+        <li>
+          <QA 
+            question="When should I call?"
+            answer="Weekdays (Mon-Fri): 9am-5pm."
+            answer2="Weekends (Sat-Sun): 11am-4pm."
+          />
+        </li>
+        <li>
+          <QA 
+            question="Are there any other methods of contact?"
+            answer="Here's our Email if you have any other questions or requests:"
+            answer2="services@yourfamilyhousecleanllc.com"
+          />
+        </li>
+
+      </ul>
+    </div>
+  )
+}
+
+export function QA(props){
+
+
+  return (
+    <div className=' flex justify-center'>
+      <div className='w-110 sm:w-140' >
+        <p className='pl-10 lg:pl-15 pb-2 text-pink-9'>Q : {props.question}</p>
+        <hr className='w-100 sm:w-125 mx-auto pb-3'/>
+        <p className='bg-white  py-10 rounded px-5'>{props.answer}<br/>{props.answer2}</p>
+      </div>
+
+
     </div>
   )
 }
