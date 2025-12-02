@@ -47,7 +47,7 @@ export function LandingArea(){
         <div className='flex flex-col pt-15 pb-13 lg:pb-25 '>
           <img className='h-10 object-contain mx-auto mb-5 md:hidden' src="./yfhc_logo_white.png" alt="light_brand_logo_img" />
           <img className='h-10 object-contain mx-auto mb-5 hidden md:block' src="./yfhc_logo.png" alt="dark_brand_logo_img" />
-          <h2 className='text-center text-white md:text-pink-5'>YourFamilyHouseClean LLC</h2>
+          <h2 className='text-center text-white md:text-pink-5'>Your Family House Cleaning</h2>
         </div>
         
         <div className='pb-130 flex flex-col justify-center'>
@@ -239,7 +239,7 @@ export function HowItWorks(){
           <h4 className=' flex flex-row justify-center sm:justify-start sm:pl-15'><span className='pr-10'>Step 3:</span> <span>Process the Payment</span></h4>
           <hr className='mt-2 border'/>
           <p className='  text-left pt-5 '>
-            Payment is collected upon service completion. We accept cash and checks only. Checks must be written to <span className='italic' >"YourFamilyHouseClean LLC"</span>.
+            Payment is collected upon service completion. We accept cash and checks only. Checks must be written to <span className='italic' >"Your Family House Cleaning LLC"</span>.
             <br/><br/>Also be sure to leave us a review online!
 
           </p>
@@ -289,7 +289,7 @@ export function FAQs(){
           <QA 
             question="Are there any other methods of contact?"
             answer="Here's our Email if you have any other questions or requests:"
-            answer2="services@yourfamilyhousecleanllc.com"
+            answer2="services@yourfamilyhousecleaning.com"
           />
         </li>
 
@@ -318,7 +318,7 @@ export function Footer(){
 
   return(
     <div className='bg-pink-7 text-sm text-white text-center py-5'>
-      <div>YourFamliyHouseCleanLLC</div>
+      <div>Your Famliy House Cleaning</div>
       <div className='' >Site developed by Willian Sullivan-Smith</div>
     </div>
   )
