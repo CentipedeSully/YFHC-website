@@ -1,7 +1,32 @@
+import { Suspense } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 
+import {createClient} from "@sanity/client"
+import {createImageUrlBuilder} from '@sanity/image-url'
+
+export const client = createClient({
+  projectId: "5wpvsras",
+  dataset: "production",
+  apiVersion: "2026-01-07", // use current date (YYYY-MM-DD)
+  useCdn: false, // set to false for fresh data
+});
+
+const builder = createImageUrlBuilder(client)
+
+function urlFor(source){
+  return builder.image(source)
+}
+
+const yfhcMedia = await client.fetch(`*[_type == "picture"]{ pic, description}`)
+
+
 function App() {
+
+  if (yfhcMedia.length === 0)
+    console.log("No media has been retrieved");
+  else
+    console.log("Media retieved.")
 
   return (
     <>
@@ -9,6 +34,7 @@ function App() {
         <Header />
         <LandingArea />
         <ServicesArea />
+        <Gallery collection={yfhcMedia}/>
         <HowItWorks />
         <FAQs/>
         <Footer />
@@ -206,6 +232,40 @@ export function LicensedAndInsured(){
         </ul>
       </div>
       
+    </div>
+  )
+}
+
+export function Gallery(props){
+
+  return(
+    <div className=' bg-pink-1 w-full pt-60 text-pink-7'>
+        <img className='h-10 object-contain mx-auto mb-5' src="./yfhc_logo.png" alt="brand_logo_img" />
+        <h2 className='text-xl text-center pb-15'>Gallery</h2>
+
+
+        <Carousel collection={props.collection} />
+    </div>
+  )
+}
+
+export function Carousel(props){
+
+  return(
+    <div className='pb-20'>
+      <hr className='w-110 sm:w-140 lg:w-250 mx-auto '/>
+      <div className='flex flex-row mx-auto w-110 h-70 sm:w-140 sm:h-100 lg:w-250 lg:h-140 overflow-x-auto snap-x snap-mandatory bg-zinc-700/40'>
+
+        {props.collection.map(element => {
+          
+          return (
+          <div key={urlFor(element.pic)} className='flex-none w-full snap-center'>
+            <img key={urlFor(element.pic)} className='object-contain mx-auto h-full w-full' src={urlFor(element.pic)} alt={element.description} />
+          </div>)
+        })}
+        
+
+      </div>
     </div>
   )
 }
